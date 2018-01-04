@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
+
+    <link href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" rel="stylesheet" type="text/css"/>
+
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+
+
+    
+    <style type="text/css">
+      .header-icons {
+        text-align: center;
+        margin: 2em 0;
+      }
+      .header-icons a span {
+        width: 62px;
+        height: 62px;
+        background: url('images/sc-icon.png') no-repeat 0px 0px;
+        display: inline-block;
+        margin: 0 5px;
+      }
+      .header-icons a span.facebook {
+        background-position:0px 0px;
+      }
+      .header-icons a span.facebook:hover {
+        background-position:0px -62px;
+      }
+      .header-icons a span.twitter {
+        background-position: -62px 0px;
+      }
+      .header-icons a span.twitter:hover {
+        background-position: -62px -62px;
+      }
+      .header-icons a span.pin{
+        background-position: -123px 0px;
+      }
+      .header-icons a span.pin:hover{
+        background-position: -123px -62px;
+      }
+      .header-icons a span.linkedin{
+        background-position: -186px 0px;
+      }
+      .header-icons a span.linkedin:hover{
+        background-position: -186px -62px;
+      }
+      .header-icons a span.flickr{
+        background-position: -248px 0px;
+      }
+      .header-icons a span.flickr:hover{
+        background-position: -248px -62px;
+      }
+      .header-icons a span.be{
+        background-position: -310px 0px;
+      }
+      .header-icons a span.be:hover{
+        background-position: -310px -62px;
+      }
+    </style>
+
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">{{ site.description }}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="page-scroll" href="#who">Who is me</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#timeline">Timeline</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#courses">Courses</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Contact</a>
+            </li>
+            <!--<li>
+              <a href="#">ESP//ENG</a>
+            </li>-->
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="intro-text wow zoomIn">
+          <div class="intro-lead-in">Journalist & Audiovisual Communication  Portfolio</div>
+          <div class="intro-heading">
+            <div class="element"></div>
+          </div>
+          <!--<div class="element"></div>-->
+          <a href="#who" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Who Section -->
+    <section id="who" class="bg-white">
+      <div class="container">
+        <div class="row wow bounceIn">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Who is me</h2>
+            <h3 class="section-subheading text-muted">"No te gustan las cosas porque la gente te dice lo que se supone que debes hacer."</p>
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <div class="team-member">
+              <img src="img/23915576_2010170575894749_6074126873678534356_n.jpg" class="img-responsive img-circle wow rubberBand" alt="" />
+              <div class="wow bounceInLeft">
+                <h4>Clara Sánchez Gallego-Albertos</h4>
+                <p class="text-muted">Journalist, musician and audiovisual communicator.</p>
+                <ul class="list-inline social-buttons header-icons">
+                  <li><a href="https://www.facebook.com/{{ site.social-links.facebook }}" target="_blank"><span class="facebook"></span></a>
+                  </li>
+                  <li><a href="https://www.twitter.com/{{ site.social-links.twitter }}" target="_blank"><span class="twitter"></span></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/in/{{ site.social-links.linkedin }}" target="_blank"><span class="linkedin"></span></a>
+                  </li>
+                  <li><a href="https://www.flickr.com/{{ site.social-links.flickr }}" target="_blank"><span class="flickr"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row wow bounceInRight">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <p class="large text-muted">
+              Double Degree in Journalism and Audiovisual Communication at the Carlos III University.
+            </p>
+            <p class="large text-muted">
+              <small>(Last update: 12/09/17)</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="bg-darkest-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Timeline</h2>
+            <h3 class="section-subheading text-muted">"The future is not written, the only ones who can tell the future you are."</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              {% assign postsByYear = site.timelines | sort: 'date' %}
+              {% for timeline in postsByYear reversed %}
+
+              {% assign mod = forloop.index | modulo: 2 %}
+
+              {% if mod == 0 %}
+                {% assign class = "wow slideInLeft" %}
+                {% assign class2 = "text-left" %}
+              {% else %}
+                {% assign class = "timeline-inverted wow slideInRight" %}
+                {% assign class2 = "" %}
+              {% endif %}
+              <li class="{{ class }}">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/{{ timeline.image }}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>
+                      {% assign m = timeline.date | date: "%-m" %}
+                      {% case m %}
+                        {% when '1' %} Enero
+                        {% when '2' %} Febrero
+                        {% when '3' %} Märzo
+                        {% when '4' %} Abril
+                        {% when '5' %} Mayo
+                        {% when '6' %} Junio
+                        {% when '7' %} Julio
+                        {% when '8' %} Agosto
+                        {% when '9' %} Septiembre
+                        {% when '10' %} Octubre
+                        {% when '11' %} Noviembre
+                        {% when '12' %} Diciembre
+                      {% endcase %}
+
+                      {{ timeline.date | date: " %Y" }} -
+                      {% if timeline.date_end %}
+                        {% assign m = timeline.date_end | date: "%-m" %}
+                        {% case m %}
+                          {% when '1' %} Enero
+                          {% when '2' %} Febrero
+                          {% when '3' %} Märzo
+                          {% when '4' %} Abril
+                          {% when '5' %} Mayo
+                          {% when '6' %} Junio
+                          {% when '7' %} Julio
+                          {% when '8' %} Agosto
+                          {% when '9' %} Septiembre
+                          {% when '10' %} Octubre
+                          {% when '11' %} Noviembre
+                          {% when '12' %} Diciembre
+                        {% endcase %}
+                        {{ timeline.date_end | date: " %Y" }}
+                      {% else %}
+                        actualidad
+                      {% endif %}
+                    </h4>
+                    <h4 class="subheading">{{ timeline.name }}</h4>
+                  </div>
+                  <div class="timeline-body {{ class2 }} text-muted">
+                    {{ timeline.content }}                      
+                  </div>
+                </div>
+              </li>
+              {% endfor %}
+
+              {% assign mod = site.timelines.length | modulo: 2 %}
+              {% if mod == 0 %}
+                {% assign class = "wow slideInLeft" %}
+              {% else %}
+                {% assign class = "timeline-inverted wow slideInRight" %}
+              {% endif %}
+
+              <li class="{{ class }}">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/born-512.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Born in 1994, Madrid (Spain)</h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+           </div>
+         </div>
+      </div>
+    </section>
+
+
+
+    <section id="skills" class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Skills</h2>
+            <h3 class="section-subheading text-muted"><!--"Todo gran viaje comienza con un pequeño paso."-->"Every great journey begins with one small step"</h3>
+          </div>
+        </div>
+        <div class="row">
+          <style type="text/css">
+            /*.skillbar {
+              position: relative;
+              display: block;
+              width: 100%;
+              margin-bottom: 30px;
+            }
+
+            .skillbar-bar:before {
+              background: #eee;
+              content: "";
+              height: 3px;
+              position: absolute;
+              width: 100%;
+              z-index: -1;
+            }
+
+            .skillbar-bar {
+              height: 3px;
+              width: 0px;
+              background: #323232;
+              transition-property: width, background-color;
+            }
+
+            .skillbar-title {
+              color: #323232;
+              font-size: 11px;
+              font-weight: 600;
+              text-transform: uppercase;
+              display: inline-block;
+            }
+
+            .skill-bar-percent {
+              float: right;
+              display: inline-block;
+              color: #323232;
+              font-size: 11px;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+
+            .wrapper {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translateX(-50%) translateY(-50%);
+            }*/
+
+
+            .progress {
+  height: 35px;
+
+}
+.progress .skill {
+  font: normal 12px "Open Sans Web";
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+          </style>
+          <div class="col-md-12">
+            {% for skill in site.data.skills %}
+            <!--<div class="skillbar" data-percent="{{ skill.score }}">
+              <div class="skillbar-title">{{ skill.name }}</div>
+              <div class="skill-bar-percent">{{ skill.score }}</div>
+              <div class="skillbar-bar" style="width: {{ skill.score }};"></div>
+            </div>-->
+            <div class="progress skill-bar">
+
+              {% assign mod = forloop.index | modulo: 4 %}
+              {% if mod == 0 %}
+                {% assign cc = "success" %}
+              {% elsif mod == 1 %}
+                {% assign cc = "info" %}
+              {% elsif mod == 2 %}
+               {% assign cc = "warning" %}
+              {% elsif mod == 3 %}
+                {% assign cc = "danger" %}
+              {% endif %}
+
+              <div class="progress-bar progress-bar-{{ cc }}" role="progressbar" aria-valuenow="{{ skill.score }}" aria-valuemin="0" aria-valuemax="100" >
+                <span class="skill">{{ skill.name }}<i class="val">{{ skill.score }}%</i></span>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+       </div>
+    </section>
+
+    <!--<div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>-->
+
+
+    <section id="courses" class="bg-darkest-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Courses</h2>
+            <h3 class="section-subheading text-muted">"Feel, don't think, use your instincts."</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            {% include courses.html %}
+          </div>
+        </div>
+       </div>
+    </section>
+
+    <section id="contact" class="bg-white">
+      <div class="container wow zoomInRight">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Contact Me</h2>
+            <br/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            {% include contact.html %}
+
+            {% include svg-icons.html %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span class="copyright">Copyright &copy; {{ site.name }} 2017 - {{ 'now' | date: "%Y" }}</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      new WOW().init();
+
+       $(document).ready(function() {
+      $('.progress .progress-bar').css("width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
+
+    </script>
+
+    {% include analytics.html %}
+  </body>
+</html>
