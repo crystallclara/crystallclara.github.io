@@ -1,27 +1,73 @@
-- name: "Leyenda - Making Of Cibernética 2017"
-  description: "Making-of of the new Leyenda's Album, Cibernética."
+- name: Radiofónicos UC3M
+  description: Programa de radio dedicado al humor para su emisión en el ámbito universitario.
+  category: others
+  link: https://radiofonicosuc3m.wordpress.com
+  image: cropped-img-20141205-wa0002.jpg
+
+- name: Cortometraje "All In"
+  description: Colaboración como ayudante de iluminación.
   category: "video"
-  link: "MH-soT8_e78"
+  link: "OJqNUDpEr7g"
+
+- name: Cortometraje "All In"
+  description: Colaboración como cámara en Cortometraje "Pueri"
+  category: "video"
+  link: "https://player.vimeo.com/video/170751188"
 
 - name: Salida De Emergencia - "Free Pink"
-  description: "First videoclip for my band Salida de Emergencia."
+  description: Primer videoclip de mi banda "Salida de Emergencia".
   category: "video"
   link: "Ab9uvZkDTmY"
 
-- name: Jose Broseta in concert
-  description: Singer José Broseta in concert with Opera Magna band
-  category: photo
-  link: https://www.flickr.com/photos/crystallclara/24954782448/in/dateposted/
-  image: https://farm5.staticflickr.com/4568/24954782448_544e4c4eff.jpg
+- name: Trabajo Fin de Grado WordsForMetal
+  description: Medio digital dedicado a la crítica musical y crónicas de conciertos.
+  category: others
+  link: http://wordsformetal.es
+  image: w4mlogo512.png
 
-- name: Guadaña
-  description: Guadaña band in concert
-  category: photo
-  link: https://www.flickr.com/photos/crystallclara/24954782448/in/dateposted/
-  image: https://farm5.staticflickr.com/4571/23962738707_6f7893389f.jpg
+- name: "Leyenda - Making Of Cibernética 2017"
+  description: "Making-of del nuevo disco de Leyenda, Cibernética"
+  category: "video"
+  link: "MH-soT8_e78"
 
-- name: Rubén Kelsen
-  description: Rubén Kelsen in concert with Débler band
-  category: photo
-  link: https://www.flickr.com/photos/crystallclara/39171858002/in/dateposted/
-  image: https://farm5.staticflickr.com/4644/39171858002_ca39a4ec1f_z.jpg
+#- name: José Broseta
+#  description: El cantante José Broseta durante su concierto con Ópera Magna.
+#  category: photo
+#  link: https://www.flickr.com/photos/crystallclara/24954782448/in/dateposted/
+#  image: https://farm5.staticflickr.com/4568/24954782448_544e4c4eff.jpg
+
+#- name: Guadaña
+#  description: Guadaña en concierto en Sala Nazca (Madrid)
+#  category: photo
+#  link: https://www.flickr.com/photos/crystallclara/24954782448/in/dateposted/
+#  image: https://farm5.staticflickr.com/4571/23962738707_6f7893389f.jpg
+
+#- name: Rubén Kelsen
+#  description: Rubén Kelsen durante su concierto con Débler en Valladolid.
+#  category: photo
+#  link: https://www.flickr.com/photos/crystallclara/39171858002/in/datepo#sted/
+#  image: https://farm5.staticflickr.com/4644/39171858002_ca39a4ec1f_z.jpg
+
+- name: Álbum Granito Rock 2017
+  description: Reportaje fotográfico del festival Granito Rock 2017
+  category: gallery
+  link: https://www.flickr.com/photos/crystallclara/albums/72157683421789932
+  image: https://farm5.staticflickr.com/4301/36118628596_3d0784c35a_z.jpg
+
+- name: Álbum Bodega Rock 2017
+  description: Reportaje fotográfico del festival Bodega Rock 2017
+  category: gallery
+  link: https://www.flickr.com/photos/crystallclara/albums/72157687804550956
+  image: https://farm5.staticflickr.com/4371/36322111730_67dc6f1dd7_z.jpg
+
+- name: Álbum Ars Amandi (2017)
+  description: Reportaje fotográfico del concierto de Ars Amandi en Madrid.
+  category: gallery
+  link: https://www.flickr.com/photos/crystallclara/albums/72157688543938084
+  image: https://farm5.staticflickr.com/4504/26239106469_e45eaaf518_z.jpg
+
+- name: Álbum Débler en Zaragoza (2017)
+  description: Reportaje fotográfico del concierto de Débler en Zaragoza
+  category: gallery
+  link: https://www.flickr.com/photos/crystallclara/albums/72157666304499519
+  image: https://farm5.staticflickr.com/4553/38335572846_e6ed1c0517_z.jpg

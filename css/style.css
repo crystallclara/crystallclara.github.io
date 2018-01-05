@@ -14,6 +14,10 @@ body
 section.bg-white
 {
   background-image: url(../img/kb0Zm.jpg);
+}
+
+section.bg-white, section.bg-darkest-gray
+{
   background-size: cover;
 }
 
@@ -203,7 +207,7 @@ section.bg-white
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
+  border: 7px solid black;
   max-width: 225px;
   height: auto;
 }
@@ -558,14 +562,33 @@ section#contact {
 .portfolio-image
 {
   width: 100%;
-  min-height: 220px;
+  height: 220px;
+  max-height: 220px;
 }
 
+@media (max-width: 991px)
+{
+  .portfolio-image
+  {
+    height: 260px;
+    max-height: 260px;
+  }
+}
 @media (min-width: 1200px)
 {
   .portfolio-image
   {
-    min-height: 270px;
+    height: 270px;
+    max-height: 270px;
+  }
+}
+
+@media (max-width: 760px)
+{
+  .portfolio-image
+  {
+    height: auto;
+    max-height: auto;
   }
 }
 
