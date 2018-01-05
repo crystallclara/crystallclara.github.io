@@ -6,13 +6,22 @@
     {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
     <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta name="twitter:description" content="{{ page.excerpt| strip_html }}" />
     {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
+    <meta name="description" content="{{ site.excertp }}">
+    <meta property="og:description" content="{{ site.excertp }}" />
     {% endif %}
     <meta name="author" content="{{ site.name }}" />
 
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+    {% if site.title %}
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:card" value="summary">
     {% endif %}
+    
+    <meta name="twitter:description" content="{{ site.excertp }}" />
+
+    <!-- Open Graph data -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ site.url }}/img/22491853_371037639998791_6882223937397810198_n.jpg" />

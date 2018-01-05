@@ -190,7 +190,7 @@ section.bg-white
   background-color: #222222;
 }
 
-.bg-darkest-gray h2, .timeline .timeline-heading h4, .timeline .timeline-body ul
+.bg-darkest-gray h2, .timeline .timeline-heading h4/*, .timeline .timeline-body ul*/
 {
   color: white;
 }
@@ -539,4 +539,135 @@ section#contact {
 .bg-darkest-gray 
 .section-subheading:after {
   border-bottom: 1px solid #fff;
+}
+
+.portfolio-row
+{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.portfolio-row > [class*='col-']
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-image
+{
+  width: 100%;
+  min-height: 220px;
+}
+
+@media (min-width: 1200px)
+{
+  .portfolio-image
+  {
+    min-height: 270px;
+  }
+}
+
+.skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.skillbar-bar:before {
+  background: #eee;
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.skillbar-bar {
+  height: 3px;
+  width: 0px;
+  /*background: #323232;*/
+  transition-property: width, background-color;
+}
+
+.skillbar-title {
+  color: #323232;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.skill-bar-percent {
+  float: right;
+  display: inline-block;
+  color: #323232;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.header-icons {
+  text-align: center;
+  margin: 2em 0;
+}
+.header-icons a span {
+  width: 62px;
+  height: 62px;
+  background: url('../images/sc-icon.png') no-repeat 0px 0px;
+  display: inline-block;
+  margin: 0 5px;
+}
+.header-icons a span.facebook {
+  background-position:0px 0px;
+}
+.header-icons a span.facebook:hover {
+  background-position:0px -62px;
+}
+.header-icons a span.twitter {
+  background-position: -62px 0px;
+}
+.header-icons a span.twitter:hover {
+  background-position: -62px -62px;
+}
+.header-icons a span.pin{
+  background-position: -123px 0px;
+}
+.header-icons a span.pin:hover{
+  background-position: -123px -62px;
+}
+.header-icons a span.linkedin{
+  background-position: -186px 0px;
+}
+.header-icons a span.linkedin:hover{
+  background-position: -186px -62px;
+}
+.header-icons a span.flickr{
+  background-position: -248px 0px;
+}
+.header-icons a span.flickr:hover{
+  background-position: -248px -62px;
+}
+.header-icons a span.be{
+  background-position: -310px 0px;
+}
+.header-icons a span.be:hover{
+  background-position: -310px -62px;
+}
+
+.bg-darkest-gray p
+{
+  color: white;
+}
+
+.timeline-body p
+{
+  color: #777;
+}
+.timeline-body ul
+{
+  color: white;
 }
