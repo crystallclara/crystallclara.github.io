@@ -23,7 +23,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 social-links:
   dribbble:
-  email: ccrisrober@gmail.com
+  email: clarasan1994@gmail.com 
   facebook: Fotografía-Clara-S-Gallego-330158500753372/
   flickr: crystallclara
   github:
@@ -57,6 +57,13 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
+
+defaults:
+  - scope:
+      path: "assets/"
+    values:
+      image: true
+
 
 permalink: /:title/
 

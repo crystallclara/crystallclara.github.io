@@ -112,8 +112,8 @@
                 <ul class="list-inline social-buttons header-icons">
                   <li><a href="https://www.facebook.com/{{ site.social-links.facebook }}" target="_blank"><span class="facebook"></span></a>
                   </li>
-                  <li><a href="https://www.twitter.com/{{ site.social-links.twitter }}" target="_blank"><span class="twitter"></span></a>
-                  </li>
+                  <!--<li><a href="https://www.twitter.com/{{ site.social-links.twitter }}" target="_blank"><span class="twitter"></span></a>
+                  </li>-->
                   <li><a href="https://www.linkedin.com/in/{{ site.social-links.linkedin }}" target="_blank"><span class="linkedin"></span></a>
                   </li>
                   <li><a href="https://www.flickr.com/{{ site.social-links.flickr }}" target="_blank"><span class="flickr"></span></a>
@@ -151,8 +151,8 @@
         <div class="row">
           <div class="col-lg-12">
             <ul class="timeline">
-              {% assign postsByYear = site.timelines | sort: 'date' %}
-              {% for timeline in postsByYear reversed %}
+              {% assign postsByYear = site.timelines | sort: 'date' | reverse %}
+              {% for timeline in postsByYear %}
 
               {% assign mod = forloop.index | modulo: 2 %}
 
@@ -253,16 +253,17 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            {% for skill in site.data.skills %}
+            {% assign skillsByValue = site.data.skills | sort: 'score' | reverse %}
+            {% for skill in skillsByValue %}
 
-              {% assign mod = forloop.index | modulo: 4 %}
-              {% if mod == 0 %}
+              {% assign v = skill.score | divided_by: 10 %}
+              {% if v >= 8 %}
                 {% assign cc = "success" %}
-              {% elsif mod == 1 %}
+              {% elsif v >= 7 %}
                 {% assign cc = "info" %}
-              {% elsif mod == 2 %}
+              {% elsif v >= 5 %}
                {% assign cc = "warning" %}
-              {% elsif mod == 3 %}
+              {% else %}
                 {% assign cc = "danger" %}
               {% endif %}
 

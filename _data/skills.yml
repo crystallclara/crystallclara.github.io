@@ -1,10 +1,16 @@
 - name: Adobe InDesign
-  score: 45
+  score: 60
 - name: Adoble Premiere
-  score: 83
+  score: 85
 - name: Adobe Photoshop
-  score: 92
+  score: 85
 - name: Gimp
-  score: 36
+  score: 70
 - name: Adoble After Effects
-  score: 77
+  score: 75
+- name: Audacity
+  score: 80
+- name: Paquete Ofimático Microsoft
+  score: 80
+- name: WordPress
+  score: 75
